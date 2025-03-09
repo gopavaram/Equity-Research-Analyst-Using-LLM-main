@@ -1,6 +1,10 @@
 LLM Notes for Self Understanding 
 reference (https://www.youtube.com/watch?v=MoqgmWV1fm8&ab_channel=codebasics)
 
+The LLM method used is Stuff method (simplest of all)  in this method:- Getting all the similar looking chunks from the vector DB-------> form a prompt
+                                                                if the chunks cross the LLM token limit this method will not work
+                                                                a better verson of this could be Map-Reduce Method (it also has its onwn drawbacks)
+
 Tech used: Lang Chain, OpenAI, Streamlit
 
 what equity research analyst does -> Reading Stock Market Articles and Analyzing where to invest
@@ -39,7 +43,7 @@ Build chat bot interface----> Ask Question----> converted to Embedding(Open AI o
 
 
 
-
+Getting all the similar looking chunks from the vector DB-------> form a prompt
 
 
 1️⃣ Revenue (Net Sales)
