@@ -1,0 +1,58 @@
+LLM Notes for Self Understanding 
+reference (https://www.youtube.com/watch?v=MoqgmWV1fm8&ab_channel=codebasics)
+
+Tech used: Lang Chain, OpenAI, Streamlit
+
+what equity research analyst does -> Reading Stock Market Articles and Analyzing where to invest
+
+Why build a Chabot when we have ChatGPT
+- ChatGPT cannot give aggregate knowledge base
+- Word Limitation (3000 Words)
+
+Problem statement 
+We need to build some kind of tool where the bot can go to the news website (once we give the URL) and pulls all the articles into some kind of knowledge base.
+
+We need to call an open AI API to perform this task, when we call an open AI Then there is a cost associated with it (Per 1K Tokens = Cost X amount) so more text you search, more tokens and more cost
+ex: Let’s say we want an answer for a question out of an article, the answer to the question lies in the first paragraph of the article itself, now if we give the whole article then we are wasting tokens and this 
+is costing us more money. So chatGPT will do a SEMANTIC SEARCH in this case
+
+Key Words
+"SEMANTIC SEARCH" ex: When we say Calories in Apple on Google and if we type Revenue of Apple google can identify that we are talking about fruit or company.It can figure this out based on the context.
+to achieve this, we use "Word Embedding", "Sentence Embedding", "Vector database"
+"Embedding" :  They will allow us to figuare out a relavent chunk of data
+"Vector database"(Pinecone, Chroma etc): They will allow us to perform a faster search on the data base
+"POC (Proof of Concept)" Short Tearm we build a demo/POC
+"Data Ingestion System" go to news article website and write a "Web Scrapper"
+"Web Scrapper" implimented in native Python or tool like brightdata and run it on "Cron Job"
+"Cron Job" its like a clock which runs, lets say every 2hrs to pull the data from the URL and convert the data into "embeding vectors" using "OpenAI" or "LAMA" or "Beart" taht goes into vector DB.
+
+
+Document Loader(getting the news articles and loading them)-----> Spliter (Splitting them into chunks)-----> Store it into Vector DB-----> Retrieveal (Answer will be retrived from vectorDB)---> Prompt
+
+Lang Chain classes I will be using --> TextLoader, CharacterTextSplitter, FAISS, RetrievalQAWithSourcesChain, UnstructuresURLLoader, recursiveTextSplitter
+
+Building a UI/UX design for Chatbot using python or reactJS etc
+
+Build chat bot interface----> Ask Question----> converted to Embedding(Open AI or LAAMA)---->From Vector DB pull relevant chunks of data----
+                                ^                                                                                                           |
+                                | -----------------------------------------------------------------------------------------------------------                                                                                                   
+
+
+
+
+
+
+1️⃣ Revenue (Net Sales)
+➝ (-) Cost of Goods Sold (COGS)
+2️⃣ Gross Profit
+➝ (-) Operating Expenses (Salaries, Rent, Depreciation, Utilities, etc.)
+3️⃣ Operating Income (EBIT) → This is where Operating Margin is calculated
+➝ (-) Interest Expenses
+4️⃣ Earnings Before Tax (EBT)
+➝ (-) Taxes
+5️⃣ Net Profit (Net Income)
+
+
+
+
+
