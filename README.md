@@ -1,4 +1,5 @@
  🚀 Equity Research AI Bot | The Ultimate Financial News Research Tool 📊
+ 
 https://github.com/user-attachments/assets/b6decabe-af13-4bbe-80f3-482ace87b382
 
 ## **📖 Overview**
