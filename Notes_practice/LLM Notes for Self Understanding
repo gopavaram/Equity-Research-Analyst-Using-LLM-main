@@ -1,5 +1,5 @@
 LLM Notes for Self Understanding 
-reference (https://www.youtube.com/watch?v=MoqgmWV1fm8&ab_channel=codebasics)
+
 
 The LLM method used is Stuff method (simplest of all)  in this method:- Getting all the similar looking chunks from the vector DB-------> form a prompt
                                                                 if the chunks cross the LLM token limit this method will not work
